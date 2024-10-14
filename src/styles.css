@@ -1,3 +1,13 @@
+/*  FONT IMPORTS    */
+
+@font-face {
+    font-family: 'Aclonica';
+    src: url('./fonts/Aclonica.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
 /* START OF CUSTOM RESET */
 
 html {
@@ -40,3 +50,83 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* END OF CUSTOM RESET */
+
+html {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    background-color: #2b2b2b;
+    color: #f5f1e8;
+}
+
+.nav-list {
+    position: absolute;
+    width: 100%;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+button {
+    padding: 1.8rem;
+    width: 100%;
+    font-family: 'Aclonica';
+    font-size: 3.6rem;
+    font-weight: bold;
+    background-color: rgba(26, 26, 26, 0.5);
+    color: #f5f1e8;
+    border: solid #f5f1e8 0.2rem;
+}
+
+#content {
+    flex-grow: 1;
+}
+
+div.section {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    height: 100%;
+    background-image: url(./images/sichuan-chilies.jpg);
+    background-size: cover;
+}
+
+h2 {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3.6rem;
+    margin: 7.2rem 18rem 3.6rem;
+}
+
+.text {
+    text-align: center;
+    font-size: 2.4rem;
+    margin: 1.2rem 18rem 1.2rem;
+}
+
+.menu-text {
+    font-size: 1.8rem;
+    margin: 0.9rem 4.8rem 0.9rem;
+}
+
+img#main-logo {
+    width: 40%;
+}
+
+footer {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #1a1a1a;
+}
