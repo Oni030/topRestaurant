@@ -18,4 +18,3 @@ function loadHomePage() {
 };
 
 export { loadHomePage };
-console.log("loadHomePage has been exported"); // Add this line for debugging
