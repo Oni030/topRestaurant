@@ -6,14 +6,20 @@ function loadAboutPage() {
     console.log("loadAboutPage function is called");
     const contentContainer = document.querySelector("#content");   
     
+
     // Outside container
     const aboutWrapper = document.createElement("div");
     aboutWrapper.classList.add("section");
     aboutWrapper.classList.add("welcome");
+    aboutWrapper.classList.add("hero");
     
+
     // Spacer
-    const spacer = document.createElement("div");
-    spacer.classList.add("spacer");
+    const spacer1 = document.createElement("div");
+    const spacer2 = document.createElement("div");
+    const spacer3 = document.createElement("div");
+    spacer1.classList.add("spacer1");
+    spacer2.classList.add("spacer2");
 
     // Panel 1
     const panel1 = document.createElement("div");
@@ -83,19 +89,12 @@ function loadAboutPage() {
     panel3.appendChild(textBox2);
     
 
-    // Textbox
-    const textBox3 = document.createElement("div");
-    textBox3.classList.add("text");
-    textBox3.textContent = "Join us, and experience the warmth and spice of Sichuan cuisine - <br> just like home..."
-
-
     // Appending elements
-    aboutWrapper.appendChild(spacer);
+    aboutWrapper.appendChild(spacer1);
     aboutWrapper.appendChild(panel1);
-    aboutWrapper.appendChild(spacer);
+    aboutWrapper.appendChild(spacer2);
     aboutWrapper.appendChild(panel2);
     aboutWrapper.appendChild(panel3);
-    aboutWrapper.appendChild(textBox3);
     contentContainer.appendChild(aboutWrapper);
 };
 
