@@ -3,7 +3,7 @@ import dish1Src from './images/sichuan_dish2.jpg'
 import dish2Src from './images/sichuan_dish4.jpg'
 
 function loadHomePage() {
-    console.log("loadAboutPage function is called");
+    console.log("loadHomePage function is called");
     const contentContainer = document.querySelector("#content");   
     
 
