@@ -96,7 +96,7 @@ div.section {
     align-items: center;
 }
 
-.hero::before {
+.hero::before, .menu-title-panel::before {
     content: "";
     position: absolute;
     top: 0;
@@ -142,6 +142,10 @@ img#small-logo {
     width: 20%;
 }
 
+img#tiny-logo {
+    width: 15%;
+}
+
 .panel {
     display: grid;
     grid-auto-flow: column;
@@ -176,6 +180,70 @@ img#small-logo {
     text-align: center;
     font-size: 2.4rem;
     margin: 1.2rem 12rem 1.2rem;
+}
+
+.menu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title-panel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.menu-panel {
+    width: 100%;
+    flex: 3;
+    display: flex;
+
+    background-color: #2b2b2b;
+    border-top: 0.5rem solid #f5f1e8;
+}
+
+.menu-page {
+    width: 25rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-content {
+    width: 100%;
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-wrapper {
+    width: 100%;
+    padding-top: 4rem;
+}
+
+.menu-title {
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-bottom: 1rem;
+}
+
+.item-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    gap: 2rem 10rem;
+}
+
+.item {
+    font-size: 2.4rem;
 }
 
 footer {
