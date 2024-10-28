@@ -1,5 +1,3 @@
-import smallLogoSrc from './images/logo-white-transparent.png';
-
 function loadMenuPage() {
     console.log("loadMenuPage function is called");
     const contentContainer = document.querySelector("#content"); 
