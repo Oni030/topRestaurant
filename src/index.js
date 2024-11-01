@@ -1,10 +1,12 @@
 import "./styles.css";
 import { loadHomePage } from "./home.js";
 import { loadMenuPage } from "./menu.js";
+import { loadReservationPage } from "./reservation.js";
 
 console.log("JavaScript is running!")
 
 document.addEventListener("DOMContentLoaded", () => {
     // loadHomePage();
-    loadMenuPage();
+    // loadMenuPage();
+    loadReservationPage();
 });
