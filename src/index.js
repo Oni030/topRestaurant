@@ -6,7 +6,7 @@ import { loadContactPage } from "./contact.js";
 console.log("JavaScript is running!")
 
 document.addEventListener("DOMContentLoaded", () => {
-    // loadHomePage();
+    loadHomePage();
     // loadMenuPage();
-    loadContactPage();
+    // loadContactPage();
 });

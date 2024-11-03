@@ -89,9 +89,10 @@ button {
     flex-grow: 1;
 }
 
-div.section {
+.hero {
     width: 100vw;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -107,10 +108,6 @@ div.section {
     background-size: cover;
     filter: contrast(125%) blur(5px);
     z-index: -1;
-}
-
-.welcome {
-    flex-direction: column;
 }
 
 .spacer1 {
@@ -244,6 +241,15 @@ img#tiny-logo {
 
 .item {
     font-size: 2.4rem;
+}
+
+.times-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.day, .time {
+    text-align: center;
 }
 
 footer {
