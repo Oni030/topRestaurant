@@ -14,6 +14,7 @@ function makeImage(parent, ...objects) {
         };
     });
     if (parent !== "") {parent.appendChild(element)};
+    return element;
 };
 
 export { makeElement, makeImage }
