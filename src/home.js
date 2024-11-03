@@ -1,4 +1,4 @@
-import { makeElement } from './functions';
+import { makeElement, makeImage } from './functions';
 import smallLogoSrc from './images/logo-white-transparent.png';
 import dish1Src from './images/sichuan_dish2.jpg'
 import dish2Src from './images/sichuan_dish4.jpg'
@@ -17,10 +17,7 @@ function loadHomePage() {
     const panel1 = makeElement("div", "panel", "", homeWrapper);
 
     // Logo Top
-    const smallLogo = makeElement("img", "", "", panel1);
-    smallLogo.setAttribute("id", "small-logo");
-    smallLogo.setAttribute("src", smallLogoSrc);
-    smallLogo.setAttribute("alt", "small-logo");
+    const smallLogo = makeImage(panel1, {id: "small-logo"}, {src: smallLogoSrc}, {alt: "small-logo"});
     
     // Title Text
     const titleText = makeElement("h2", "", "Welcome to the Red Dragon", panel1);
@@ -46,17 +43,14 @@ function loadHomePage() {
     
     // Panel 3
     const panel3 = makeElement("div", "panel", "", homeWrapper);
+
+    const imgBox2 = makeElement("div", "", "", panel3)
+
+    const img2 = makeImage(imgBox2, {id: "Dish2"}, {src: dish2Src});
     
     const textBox2 = makeElement("div", "text-box", "", panel3);
     
     const text2 = makeElement("p", "text", "Indulge in classics like Kung Pao Chicken, Mapo Tofu, Dan Dan Noodles, and the signature Sichuan Hot Pot, all prepared with the freshest ingredients and time-honored recipes passed down through generations. Whether you're craving the numbing heat of Sichuan Peppercorns or the savory warmth of our family dishes, Red Dragon is where great food meets great company.", textBox2);
-    
-    const imgBox2 = makeElement("div", "", "", panel3)
-
-    const img2 = document.createElement("img");
-    img2.setAttribute("id", "Dish2");
-    img2.setAttribute("src", dish2Src);
-    imgBox2.appendChild(img2);
 };
 
 export { loadHomePage };
