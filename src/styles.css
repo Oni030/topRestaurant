@@ -199,18 +199,8 @@ img#tiny-logo {
     width: 100%;
     flex: 3;
     display: flex;
-
     background-color: #2b2b2b;
     border-top: 0.5rem solid #f5f1e8;
-}
-
-.menu-page {
-    width: 25rem;
-    height: 50rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .menu-content {
@@ -243,13 +233,41 @@ img#tiny-logo {
     font-size: 2.4rem;
 }
 
+.contact-panel {
+    flex-direction: column;
+}
+
 .times-list {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.day, .time {
+.contact-list {
+    display: flex;
+    gap: 12rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+
+.icon {
+    width: 3rem;
+    filter: invert(93%) sepia(4%) saturate(984%) hue-rotate(327deg) brightness(108%) contrast(92%);
+}
+
+.dayTime {
     text-align: center;
+    font-size: 2.4rem;
+}
+
+.contact-item:hover {
+    color: #ff0000;
+    filter: brightness(0) saturate(100%) invert(14%) sepia(96%) saturate(7498%) hue-rotate(9deg) brightness(107%) contrast(117%);
+    cursor: pointer;
 }
 
 footer {
