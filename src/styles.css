@@ -85,6 +85,15 @@ button {
     border: solid #f5f1e8 0.2rem;
 }
 
+button:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+    cursor: pointer;
+}
+
+button:active {
+    background-color: rgba(200, 200, 200, 0.83);
+}
+
 #content {
     flex-grow: 1;
 }
